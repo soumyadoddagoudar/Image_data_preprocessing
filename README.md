@@ -1,4 +1,4 @@
-#Image_data_preprocessing
+Image_data_preprocessing
 
 #Introduction
  	Python code for some preprocessing of IMAGE data.
