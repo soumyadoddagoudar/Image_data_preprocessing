@@ -19,6 +19,9 @@ import xml.etree.ElementTree as ET
 
 
 def xml_to_csv(path):
+    '''
+    Reads xml files and stores values in csv file.
+    '''
     xml_list = []
     for xml_file in glob.glob(path + '/*.xml'):
         tree = ET.parse(xml_file)
@@ -42,13 +45,17 @@ def xml_to_csv(path):
 def main():
     image_path = str(input("ENTER PATH which contains images AND ANNOATIONSXML : \n"))
     #os.path.join(os.getcwd(), 'peson_annotations')
+    
+    #calling function
     xml_df = xml_to_csv(image_path)
     xml_df.to_csv('labels.csv', index=None)
     print('Successfully converted xml to csv.')
     import csv
-
+    
+    #reads csv file and parse through each row
     with open('labels.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter=',')
+        # n value will increment so has to give different image names to be saved
         n=1
         header=1
         for row in readCSV:
@@ -64,8 +71,10 @@ def main():
             xmax=int(row[6])
             ymax=int(row[7])
             cropped = img[ymin:ymax, xmin:xmax] 
+            #check if already folder with label name exists if not create it.
             if not  os.path.exists(str(image_path+str(row[3]))):
                 os.makedirs(image_path+str(row[3]))
+            #write a cropped image to respective folder.
             cv2.imwrite(image_path+str(row[3])+"/"+str(row[3])+str(n)+".jpg", cropped)
             n=n+1
           
