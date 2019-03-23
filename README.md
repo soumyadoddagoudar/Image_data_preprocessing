@@ -17,5 +17,5 @@ In deep learning model training we prepare a data which includes image and corre
 ### 	To run the file open spyder or Anaconda prompt and type below command:
 Python crop_bbox_from_xml.py
 
-It will ask for path, provide your system path where image and corresponding xml files are stored.output images will be stored in respective label folder.
+It will ask for path, provide your system path where image and corresponding xml files are stored without quotes.output images will be stored in respective label folder.
 
