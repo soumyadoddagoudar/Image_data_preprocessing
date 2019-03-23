@@ -4,7 +4,7 @@
 ## Introduction
  	Python code for preprocessing of Image data
 ## Quick start
- 	Required python packages:
+ Required python packages:
 •	pandas  0.19.2
 
 •	opencv 3.4.2
@@ -14,7 +14,7 @@ In deep learning model training we prepare a data which includes image and corre
 ![alt text]( https://github.com/soumyadoddagoudar/Image_data_preprocessing/blob/master/data/refernce_explanimage.png)
 
 
-## 	To run the file open spyder or Anaconda prompt and type below command:
+### 	To run the file open spyder or Anaconda prompt and type below command:
 Python crop_bbox_from_xml.py
 
 It will ask for path, provide your system path where image and corresponding xml files are stored.output images will be stored in respective label folder.
