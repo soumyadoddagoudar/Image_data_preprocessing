@@ -1,5 +1,6 @@
 #Image_data_preprocessing
-Introduction
+
+#Introduction
  	Python code for some preprocessing of IMAGE data.
 Quick start
  	Required python packages:
