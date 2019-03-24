@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Dec  3 10:54:22 2018
-
+This function checks whether bbox is inside the rectangle region.
 @author: soumya.doddagoudar
 """
 import cv2
@@ -30,8 +30,7 @@ def point_poylgontest(Roi_bbox,coord):
 Roi_bbox=[235,85,501-235,233-85]  
 coord=(259,147,290,192)  
 
-#centroid=[588,156]
 
-# (x, y, width, height).
-#object_bbox=(259,147,290-259,192-147)
 point_poylgontest(Roi_bbox,coord)
+#ROI_bbox-rectangle region --- x,y,w,h(top,left,width,height)
+#coord-object/boundingbox coordinates ------(top,left,bottom,right)
