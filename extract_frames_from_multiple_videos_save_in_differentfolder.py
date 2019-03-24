@@ -3,11 +3,6 @@
 Created on Sun Mar 24 02:27:49 2019
 
 @author: soumya.doddagoudar
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Apr  2 17:17:55 2018
 
 
 This code extracts the frame from different videos stored in a folder and save the framea in respective video name folder.
