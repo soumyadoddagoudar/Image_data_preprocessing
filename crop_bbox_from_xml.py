@@ -43,7 +43,7 @@ def xml_to_csv(path):
 
 
 def main():
-    image_path = str(input("ENTER PATH which contains images AND ANNOATIONSXML : \n"))
+    image_path = str(input("ENTER PATH which contains images AND ANNOATIONSXML without quotes : \n"))
     #os.path.join(os.getcwd(), 'peson_annotations')
     
     #calling function
