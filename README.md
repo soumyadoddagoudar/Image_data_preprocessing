@@ -13,7 +13,7 @@
 In deep learning model training we prepare a data which includes image and corresponding xml files which contains bounding box(bbox) of object and label. This data can be prepared using labelimg tool(https://github.com/qaprosoft/labelImg) or other tools. In this repository I uploaded 2 example image and xml files for review. Sometimes we need only exact croped object out of image to prepare dataset. So this code helps you to do that.
 ## Example:
 ![alt text]( https://github.com/soumyadoddagoudar/Image_data_preprocessing/blob/master/data/refernce_explanimage.png)
-
+ 
 
 ### 	To run the file open spyder or Anaconda prompt and type below command:
 Python crop_bbox_from_xml.py
